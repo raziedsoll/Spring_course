@@ -1,11 +1,16 @@
 package SpringIntroduction;
 
-public class Cat implements Pet{
+
+import org.springframework.stereotype.Component;
+
+@Component("catBean")
+public class Cat implements Pet {
 
 
-    Cat(){
+    Cat() {
         System.out.println("Cat here");
     }
+
     @Override
     public void say() {
         System.out.println("May-may");

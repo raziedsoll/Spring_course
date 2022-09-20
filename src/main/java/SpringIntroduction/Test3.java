@@ -4,10 +4,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test3 {
     public static void main(String[] args) {
-        //Если просто жаба
-//        Pet pet = new Dog();
-//        Person person = new Person(pet);
-//        person.callYourPer();
 
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -15,7 +11,7 @@ public class Test3 {
         context.close();
 
         person.callYourPer();
-//        System.out.println(person.getAge());
-//        System.out.println(person.getSurname());
+        System.out.println(person.getAge());
+        System.out.println(person.getSurname());
     }
 }
